@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../assets/images/mainLogo.png";
 
 export class Header extends Component {
   render() {
@@ -9,19 +10,20 @@ export class Header extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
+                  <img className="header-logo" src={logo} alt="logo..." />
                   <h1>
                     {this.props.data ? this.props.data.title : "Loading"}
                     <span></span>
                   </h1>
-                  <p>
+                  <h3>
                     {this.props.data ? this.props.data.paragraph : "Loading"}
-                  </p>
-                  <a
+                  </h3>
+                  {/* <a
                     href="#features"
                     className="btn btn-custom btn-lg page-scroll"
                   >
                     Learn More
-                  </a>{" "}
+                  </a>{" "} */}
                 </div>
               </div>
             </div>

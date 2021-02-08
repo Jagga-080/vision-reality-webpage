@@ -3,7 +3,8 @@ import Navigation from "./components/navigation";
 import Header from "./components/header";
 import Features from "./components/features";
 import About from "./components/about";
-import Services from "./components/services";
+import Social from "./components/social";
+import Footer from "./components/footer";
 import Gallery from "./components/gallery";
 import Testimonials from "./components/testimonials";
 import Team from "./components/Team";
@@ -25,15 +26,12 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Navigation />
         <Header data={this.state.landingPageData.Header} />
-        <Features data={this.state.landingPageData.Features} />
+        <Team data={this.state.landingPageData.overview} />
         <About data={this.state.landingPageData.About} />
-        <Services data={this.state.landingPageData.Services} />
-        <Gallery />
-        <Testimonials data={this.state.landingPageData.Testimonials} />
-        <Team data={this.state.landingPageData.Team} />
-        <Contact data={this.state.landingPageData.Contact} />
+        <Social />
+        <Gallery data={this.state.landingPageData.Portfolio} />
+        <Footer />
       </div>
     );
   }

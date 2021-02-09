@@ -11,11 +11,11 @@ export class Header extends Component {
               <div className="row">
                 <div className="col-md-8 col-md-offset-2 intro-text">
                   <img className="header-logo" src={logo} alt="logo..." />
-                  <h1>
+                  <h1 className="header-main-head">
                     {this.props.data ? this.props.data.title : "Loading"}
                     <span></span>
                   </h1>
-                  <h3>
+                  <h3 className="header-sub-head">
                     {this.props.data ? this.props.data.paragraph : "Loading"}
                   </h3>
                   {/* <a

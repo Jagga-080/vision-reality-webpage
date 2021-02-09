@@ -13,8 +13,12 @@ function social() {
           className="social-logo"
           src={socialLogo}
         />
-        <h2>Download Vision Reality in your Phone</h2>
-        <h4 className="text-muted">Available on Google Play and App Store</h4>
+        <h2 className="social-heading">
+          Download Vision Reality in your Phone
+        </h2>
+        <h4 className="text-muted social-sub-head">
+          Available on Google Play and App Store
+        </h4>
         <div className="social-new-button">
           <Button>
             <img style={{ cursor: "pointer" }} src={play} />

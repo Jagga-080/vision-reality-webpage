@@ -207,7 +207,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background-image: url(../img/header/bg_image.png);
+  background: url(../img/header/bg_image.png) center no-repeat;
 
   background-color: #e5e5e5;
   -webkit-background-size: cover;
@@ -282,7 +282,7 @@ header .intro-text {
   width: 100%;
 }
 .social-new-div {
-  position: absolute;
+  /* position: absolute; */
   min-height: 400px;
   max-height: 400px;
 }
@@ -353,6 +353,11 @@ header .intro-text {
 .about-main {
   width: 425px;
   height: 555px;
+  left: 5vw;
+}
+.main-image-about {
+  position: relative;
+  bottom: 500px;
   left: 5vw;
 }
 /* Services Section */
@@ -550,9 +555,9 @@ div#features.text-center {
 }
 .team {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: auto 15px auto 15px;
+  margin: auto 15px 15px 15px;
   padding: 0 !important;
-  max-width: 360px !important;
+  max-width: 293px !important;
 }
 /* Contact Section */
 #contact {
@@ -720,12 +725,15 @@ label {
 .footer-city {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .footer-city span {
-  margin: 2px 15px 2px 15px;
+  margin: 10px 15px 10px 15px;
+  min-width: 10%;
+  max-width: 10%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   #about img {
     position: relative;
     left: 17%;
@@ -736,15 +744,61 @@ label {
     left: 81%;
     margin-left: 0 !important;
   }
+  .team {
+    max-width: 345px !important;
+    margin-bottom: 15px !important;
+  }
+  #about img {
+    left: 0 !important;
+  }
+  #about {
+    padding: 4rem;
+  }
+  #team {
+    padding-bottom: 30px !important ;
+  }
+  .about-main {
+    /* width: 100% !important; */
+    left: 0 !important;
+    min-width: 670px !important;
+    max-width: 670px !important;
+  }
+  .about-main-back {
+    display: none;
+  }
+  .social-new {
+    background-color: #e5e5e5 !important;
+  }
+  .main-image-about {
+    left: 0 !important;
+    bottom: 0 !important;
+  }
+  .footer-city {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-links {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .social-new-div {
+    position: absolute;
+  }
+  .social-heading {
+    font-size: 30px;
+    max-width: 450px;
+  }
 }
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   header .intro-text {
     padding-top: 100px !important;
     padding-bottom: 100px !important;
   }
-  .intro h1 {
-    font-size: 25px !important;
-  }
+
   .navbar > .container .navbar-brand {
     position: relative;
     left: 0% !important;
@@ -754,5 +808,49 @@ label {
     position: relative;
     left: 0 !important;
     margin: 10px 0 20px 0;
+  }
+  .header-logo {
+    height: 204px !important;
+    width: 297px !important;
+  }
+  .social-heading {
+    font-size: 20px;
+    max-width: 250px;
+  }
+  .social-sub-head {
+    max-width: 250px !important;
+  }
+  .header-sub-head {
+    font-size: 30px !important;
+  }
+  .header-main-head {
+    font-size: 50px !important;
+  }
+  .team {
+    max-width: 400px !important;
+    margin-bottom: 15px !important;
+  }
+  .gallery-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+  }
+  .footer-links a {
+    max-width: 40%;
+    min-width: 40%;
+  }
+  .footer-city span {
+    max-width: 30%;
+    min-width: 30%;
+  }
+  .social-new-div {
+    position: absolute;
+  }
+}
+@media (min-width: 1200px) {
+  .team {
+    max-width: 360px !important;
   }
 }

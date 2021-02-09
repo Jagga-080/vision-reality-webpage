@@ -57,6 +57,7 @@ export class about extends Component {
                 alt=""
               />
               <div
+                className="main-image-about"
                 style={{ position: "relative", bottom: "500px", left: "5vw" }}
               >
                 <img

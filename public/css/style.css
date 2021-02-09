@@ -282,7 +282,7 @@ header .intro-text {
   width: 100%;
 }
 .social-new-div {
-  /* position: absolute; */
+  position: absolute;
   min-height: 400px;
   max-height: 400px;
 }
@@ -849,8 +849,11 @@ label {
     position: absolute;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .team {
     max-width: 360px !important;
+  }
+  .social-new-div {
+    position: relative;
   }
 }

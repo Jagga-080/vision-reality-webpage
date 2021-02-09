@@ -790,7 +790,7 @@ label {
     max-width: 450px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
@@ -815,10 +815,10 @@ label {
   }
   .social-heading {
     font-size: 20px;
-    max-width: 250px;
+    max-width: 200px;
   }
   .social-sub-head {
-    max-width: 250px !important;
+    max-width: 200px !important;
   }
   .header-sub-head {
     font-size: 30px !important;
@@ -847,6 +847,19 @@ label {
   }
   .social-new-div {
     position: absolute;
+    margin-top: 124px;
+  }
+  /* .about-main {
+    width: 200px !important;
+  } */
+  /* #about img {
+    width: 200px !important;
+  } */
+  .about-main {
+    /* width: 100% !important; */
+    left: 0 !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
   }
 }
 @media (min-width: 1400px) {
